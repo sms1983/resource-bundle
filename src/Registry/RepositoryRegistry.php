@@ -75,7 +75,7 @@ class RepositoryRegistry implements RepositoryRegistryInterface
     /**
      * {@inheritdoc}
      */
-    public function get($repositoryName = null)
+    public function get(string $repositoryName = null)
     {
         if (null === $repositoryName) {
             $repositoryName = $this->defaultRepositoryName;
