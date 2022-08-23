@@ -23,8 +23,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('cmf_resource')
+        $treeBuilder = new TreeBuilder('cmf_resource');
+        $treeBuilder->getRootNode()
             ->fixXmlConfig('repository', 'repositories')
             ->children()
                 ->arrayNode('description')
